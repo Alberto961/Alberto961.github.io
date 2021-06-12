@@ -1,0 +1,124 @@
+body {
+  background-color: darkslateblue;
+}
+.contenedor {
+  background-color: darkgrey;
+}
+header {
+  background-color: darkorchid;
+}
+nav {
+  background-color: darkseagreen;
+}
+section {
+  background-color: white;
+}
+footer {
+  background-color: yellowgreen;
+}
+
+.borde1 {
+  border-style: dotted;
+}
+
+.borde2 {
+  border-style: dashed;
+}
+
+.borde3 {
+  border-style: solid;
+}
+
+.borde4 {
+  border-style: double;
+}
+
+.borde5 {
+  border-style: groove;
+}
+
+.borde6 {
+  border-style: ridge;
+}
+
+.borde7 {
+  border-style: inset;
+}
+
+.borde8 {
+  border-style: outset;
+}
+
+.borde9 {
+  border-style: none;
+}
+
+.borde10 {
+  border-style: hidden;
+}
+
+/*Agregamos un borde detipo combinado
+cuando realizamos bordes combinados la sintaxis sería la siguiente:
+ border-style: (Arriba y Abajo) (Izquierda y Derecha);
+  border-style: (Arriba) (Izquierda y Derecha) (Abajo);
+   border-style: (Arriba) (Derecha) (Abajo) (Izquierda);
+*/
+.borde11 {
+  border-style: dotted dashed solid double;
+}
+
+.borde12 {
+  border-style: dotted;
+  border-width: 10px;
+}
+
+.borde13 {
+  border-style: dashed;
+  border-width: medium;
+}
+
+.borde14 {
+  border-style: solid;
+  border-width: 10px 15px 4px 7pxsss;
+}
+
+/*Aplicamos bordes cambiando el color del borde*/
+.borde15 {
+  border-style: solid;
+  border-color: deeppink;
+}
+
+.borde16 {
+  border-style: dashed;
+  border-color: deeppink rebeccapurple blue yellowgreen;
+}
+
+/*Aplicamos bordes solo a un lugar específico*/
+.borde17 {
+  border-top-style: dashed;
+}
+
+.borde18 {
+  border-bottom-style: dotted;
+}
+
+.borde19 {
+  border-left-style: solid;
+}
+
+.borde20 {
+  border-right-style: double;
+}
+
+/*Aplicamos bordes redondeándolos*/
+.borde21 {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+}
+
+.borde22 {
+  border-style: solid;
+  border-width: 20px;
+  border-radius: 15px;
+}
