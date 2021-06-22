@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 4</title>
+    <script type="text/javascript">
+    // Ejemplo1
+    // Desarrollar una aplicacion que te permita ingresar dos numeros y luego  permita calcular las aoperaciones basicas
+    // ¿Cuantas variables necesito?
+    // 6
+    // ¿Que tipo de datos necesito
+    // Real
+    // ¿Cuales son las variables que necesito?
+    // n1, n2, sum, res, mul, div
+    // ¿Que variables voy a leer?
+    // n1, n2
+    // Declarando funciones
+    function CalculaSuma(num1, num2){
+        return num1+num2
+    }
+    function CalculaResta(num1, num2){
+        return num1-num2
+    }
+    function CalculaMultiplicacion(num1, num2){
+        return num1*num2
+    }
+    function CalculaDivision(num1, num2){
+        return num1/num2
+    }
+    
+    // Creamos un procedimiento para llamar a las funciones
+    function Calcular(){
+        if(document.getElementById("txtN1").value==""){
+            alert("Ingrese el numero 1");
+            document.getElementById("txtN1").focus();
+        }else if(document.getElementById("txtN2").value==""){
+            alert("Ingrese el numero 2");
+            document.getElementById("txtN2").focus();
+        }else{
+            // Declarando e inicializando valores
+    var n1=0, n2=0, sum=0, res=0, mul=0, div=0;
+    // Capturando valores
+    n1=parseFloat(document.getElementById("txtN1").value);
+    n2=parseFloat(document.getElementById("txtN2").value);
+    // alert(n1);
+    // alert(n2);
+    // Llamando a las funciones para calcular
+    sum=CalculaSuma(n1, n2);
+    res=CalculaResta(n1, n2);
+    mul=CalculaMultiplicacion(n1, n2);
+    div=CalculaDivision(n1, n2);
+    // Mostrando resultados
+    document.getElementById("txtSum").value=sum;
+    document.getElementById("txtRes").value=res;
+    document.getElementById("txtMul").value=mul;
+    document.getElementById("txtDiv").value=div;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="txtN1">Numero 1:</label>
+        <input type="text" name="txtN1" id="txtN1"><br>
+        <label for="txtN2">Numero 2:</label>
+        <input type="text" name="txtN2" id="txtN2"><br>
+        <label for="txtSum">Suma:</label>
+        <input type="text" name="txtSum" id="txtSum"><br>
+        <label for="txtRes">Resta:</label>
+        <input type="text" name="txtRes" id="txtRes"><br>
+        <label for="txtMul">Multipliacion:</label>
+        <input type="text" name="txtMul" id="txtMul"><br>
+        <label for="txtDiv">Division:</label>
+        <input type="text" name="txtDiv" id="txtDiv"><br>
+        <input type="button" onclick="Calcular()" name="btnCalcular" id="btnCalcular" value="Calcular">
+        <input type="reset" id="btnLimpiar" name="btnLimpiar" value="Limpiar">
+    </form>
+    <hr>
+    <a href="index.html">Regresar</a>
+</body>
+</html>
