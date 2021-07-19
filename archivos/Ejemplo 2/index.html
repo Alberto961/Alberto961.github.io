@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Como primer para un diseño responsivo configuramos las escalas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--Es necesario definir el description y los keywords
     escription es una descripcion de tu sitio web
     keyword son palabras clave relacionadas a tu sitio web-->
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Ejemplo 2 HTML</title>
+    <!-- llamamos al estilo -->
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
 </head>
 <body>
 <!-- Inicio del contenedor -->
@@ -30,15 +33,15 @@
     </header>
     <!-- Fin del Header -->
     <!-- Inicia la seccion principal -->
-    <section>
+    <section class="principal">
         <!-- Inicia la imagen -->
-        <div>
+        <div class="imagen">
             <img src="img/foto1.jpg" alt="Edificio moderno">
         </div>
         <!-- Fin de la imagen -->
     <!-- Fin de la seccion principal -->
     <!-- Inicia publicaciones -->
-    <section>
+    <section class="publicaciones">
         <!-- Inicia el articulo -->
             <article>
                 <h2>Titulo del Artículo</h2>
@@ -60,8 +63,8 @@
     <!-- Fin de seccion principal -->
     <!-- Inicia la publicidad -->
     <aside>
-        <div>
-            <h3>Artículos destacados</h3>
+        <div class="anuncio">
+            <h3 class="tituloanuncio">Artículos destacados</h3>
             <ul>
                 <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quibusdam velit quidem modi,</a></li>
                 <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quo consectetur quaerat officia cum</a></li>
@@ -70,8 +73,8 @@
                 <li><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum aut consequuntur qui optio</a></li>
             </ul>
         </div>
-        <div>
-            <h3>Información</h3>
+        <div class="anuncio">
+            <h3 class="tituloanuncio">Información</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestias corporis expedita tempore, consequuntur autem dolorum! Expedita, ipsum est quis veritatis quo modi enim ducimus. Sed culpa pariatur odio commodi?</p>
         </div>
     </aside>
