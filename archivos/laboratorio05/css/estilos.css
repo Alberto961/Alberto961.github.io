@@ -5,8 +5,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
-  background-color: rgb(192, 187, 137);
+  width: 15%;
+  background-color: gainsboro;
   position: fixed;
   overflow: auto;
   border: 1px solid #555;
@@ -25,8 +25,8 @@ li a {
 }
 
 li a.activo {
-  background-color: rgb(34, 52, 209);
-  color: rgb(187, 180, 89);
+  background-color: green;
+  color: white;
 }
 
 li a:hover:not(.activo) {
