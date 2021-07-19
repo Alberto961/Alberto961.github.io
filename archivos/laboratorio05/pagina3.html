@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Firebase - Parte 1</title>
+</head>
+<body>
+<div class="container">
+    <form action="" class="formulario">
+        <div class="escrito">
+            <label for="txtNom">Nombres:</label>
+            <input type="text" name="txtNom" id="txtNom"><br>
+            <label for="txtApe">Apellidos:</label>
+            <input type="text" name="txtApe" id="txtApe"><br>
+            <label for="txtDni">Dni:</label>
+            <input type="text" name="txtDni" id="txtDni"><br>
+        </div>
+        <div class="marcarCurso">
+            <label for="cboCurso">Curso:</label>
+            <select name="cboCurso" id="cboCurso">
+                <option value="0">Seleccione una opcion</option>
+                <option value="1">Diseño Web</option>
+                <option value="2">Base de datos</option>
+                <option value="3">Programacion con Java</option>
+            </select><br>
+        </div>
+        <div class="marcarTurno">
+            <label for="">Turno:</label>
+            <input type="radio" name="turno" id="rbM"><label for="rbM">Mañana</label>
+            <input type="radio" name="turno" id="rbT"><label for="rbT">Tarde</label>
+            <input type="radio" name="turno" id="rbN"><label for="rbN">Noche</label>
+            <br>
+        </div>
+        <div class="marcarEstado">
+            <label for="">Estado:</label>
+            <input type="checkbox" name="chkEst" id="chkEst">
+            <label for="chkEst">Habilitado</label><br>
+        </div>
+        <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar">
+        <input type="reset" value="Limpiar" name="btnLimpiar" id="btnLimpiar">
+    </form>
+    <hr>
+    <table id="tbAlumno">
+        <thead>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>DNI</th>
+            <th>Curso</th>
+            <th>Turno</th>
+            <th>Estado</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <hr>
+    <a href="index.html">Regresar</a>
+</div>
+</body>
+</html>
